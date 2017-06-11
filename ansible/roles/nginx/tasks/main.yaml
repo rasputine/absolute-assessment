@@ -1,0 +1,9 @@
+---
+- name: Install nginx
+  apt:
+    name: nginx
+    state: latest
+
+- name: Copy conf file
+  template: src=flask dest=/etc/nginx/sites-enabled/flask
+  notify: restart nginx

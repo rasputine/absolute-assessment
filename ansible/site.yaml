@@ -1,0 +1,8 @@
+---
+- name: Install nginx / flask environment
+  hosts: all
+  remote_user: root
+
+  roles:
+    - nginx
+    - flask

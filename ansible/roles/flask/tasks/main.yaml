@@ -1,0 +1,9 @@
+---
+- name: install pip
+  apt:
+    name: python-pip
+    state: latest
+
+- name: install flask
+  pip:
+    name: flask
